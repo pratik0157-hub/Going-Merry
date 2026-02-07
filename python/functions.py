@@ -22,3 +22,13 @@ def gcd(a, b):
     while b:
         a, b = b, a % b
     return a
+def square_root(num):
+    if num <0:
+        return None
+    if num==0:
+        return 0
+    x = num
+    eps = 1e-6
+    while abs(x*x - num)>eps:
+        x=(x + num/x)/2
+    return x
