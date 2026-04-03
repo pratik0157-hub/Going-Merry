@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def sum_dictionary(arr):
     total = 0
     for item in arr:

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def special_character(text):
     special = r'@_!#$%^&*()<>?/\|}{~:'
     

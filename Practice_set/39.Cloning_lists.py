@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def clone(arr):
     clone1 = []
     for item in arr:

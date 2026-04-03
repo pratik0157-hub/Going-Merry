@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def happy_num(start, end):
     num_list = []
     for num in range(start,end+1): 

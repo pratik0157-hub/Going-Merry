@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def dec_bin(num):
     ans1 = ""
     ans2 = ""

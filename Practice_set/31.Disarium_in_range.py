@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 print("Disarium number in the range of 1 to 100 is: ")
 for i in range(1,100):
     n = 1

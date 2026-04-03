@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def bubble_sort(arr, size):
     if size<2:
         return "list must contain atleast more then two numbers"

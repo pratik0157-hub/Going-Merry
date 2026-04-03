@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def matrix_multipy(arr1, arr2, r1, c1, r2, c2):
     if r2 == c1:
         final = [[0 for f in range(c2)]for u in range(r1)]

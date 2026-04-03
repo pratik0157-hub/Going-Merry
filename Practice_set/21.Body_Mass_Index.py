@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def BMI(w, h):
     ans = w/(h*h)
     return ans

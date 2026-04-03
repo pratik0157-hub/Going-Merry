@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 num = int(input("Enter the cube sum of naturals numbers upto which number: "))
 sum = 0
 for i in range(0, num+1):

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def matrix_add(arr1, arr2, r, c):
     final = [[0 for f in range(c)]for u in range(r)]
     for n in range(0,r):

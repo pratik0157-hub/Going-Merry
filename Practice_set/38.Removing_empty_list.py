@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def remove_empty_list(arr):
     final = []
     for item in arr:

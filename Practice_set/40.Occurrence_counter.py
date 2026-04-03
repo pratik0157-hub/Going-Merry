@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def counter(arr):
     type = {}
     for item in arr:

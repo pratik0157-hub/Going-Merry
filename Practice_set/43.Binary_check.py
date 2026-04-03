@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def isbinary(s):
     for i in range(0,len(s)):
         if s[i]!=0 and s[i]!=1:

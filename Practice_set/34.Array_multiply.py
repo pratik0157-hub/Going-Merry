@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def arr_multiply(arr, size):
     final = 1
     for i in range(0,size):

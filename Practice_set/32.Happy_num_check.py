@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 history = []
 num = int(input("Enter any number: "))
 

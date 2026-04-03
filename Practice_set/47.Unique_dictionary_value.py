@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def unique_value(d):
     final = []
     for key in d:

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def odd_num(arr, size):
     odd = []
     for i in range(0, size):

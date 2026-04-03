@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def uncommon(s1, s2):
     final = []
     for item in s1:

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def split_add(list, limit):
     if limit%2!=0:
         return "Array size must be even!!"

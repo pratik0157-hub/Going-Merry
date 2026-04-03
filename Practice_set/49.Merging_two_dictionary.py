@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def Merging_dictionary(arr1, arr2):
     final = arr1.copy()
     

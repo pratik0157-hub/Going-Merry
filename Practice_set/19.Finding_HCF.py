@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def hcf(num1, num2):
     if num1>num2:
         smaller = num2

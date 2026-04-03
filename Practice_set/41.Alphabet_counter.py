@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def counter_check(arr, limit):
     final = []
     for item in arr:

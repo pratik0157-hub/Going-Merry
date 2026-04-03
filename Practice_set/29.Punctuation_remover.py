@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 line = input("Enter the sentence: ")
 final = " "
 n = 0

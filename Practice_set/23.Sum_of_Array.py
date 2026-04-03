@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def sum_array(list):
     sum = 0
     for i in list:

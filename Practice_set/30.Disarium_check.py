@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def check_disarium(num):
     n=1
     sum = 0
