@@ -1,11 +1,12 @@
-import sys
-
-def function1():
-    print("hello i am first.")
-
-def funtion2():
-    print("hello i am second.")
-
-arguments = sys.argv[1:]
-if len(arguments) != 1:
-    print("error")
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument("square", type=int,
+                    help="display a square of a given number")
+parser.add_argument("-v", "--verbose", action="store_true",
+                    help="increase output verbosity")
+args = parser.parse_args()
+answer = args.square**2
+if args.verbose:
+    print(f"the square of {args.square} equals {answer}")
+else:
+    print(answer)
