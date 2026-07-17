@@ -4,13 +4,17 @@ import requests
 from config import API_KEY, GEOCODE_URL
 
 def get_coordinates(city):
+    # Create the API URL using the city name and API key
     url = f"{GEOCODE_URL}?q={city}&limit=5&appid={API_KEY}"
+
+    # Send a GET request to the geocoding API
     response = requests.get(url)
+
+    # Check if the request was successful
     if response.status_code == 200:
+        # Convert the JSON response into a Python object
         coordinates = response.json()
         return coordinates
     else:
-        return 0
-
-
-    
+        # Return None if the request fails
+        return None

@@ -1,10 +1,16 @@
 #!/usr/bin/env python3
 
+from dotenv import load_dotenv
+import os
 
-API_KEY = "0e76dc96c358b54035531417f29dbb75"
+# Load the environment variables from the .env file
+load_dotenv()
 
+# Get the API key from the environment variables
+API_KEY = os.getenv("API_KEY")
 
-GEOCODE_URL = f"http://api.openweathermap.org/geo/1.0/direct"
-      
+# Base URL for converting a city name to coordinates
+GEOCODE_URL = "http://api.openweathermap.org/geo/1.0/direct"
 
-WEATHER_URL = f"https://api.openweathermap.org/data/2.5/weather"
+# Base URL for fetching weather data using coordinates
+WEATHER_URL = "https://api.openweathermap.org/data/2.5/weather"
