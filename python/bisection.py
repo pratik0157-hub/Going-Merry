@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 low = 0
-high = 100
-print("Please think of a number between 0 and 100!")
+high = 1000
+print("Please think of a number between 0 and 1000!")
 
 while True:
     guess = (low + high) // 2
