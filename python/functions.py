@@ -51,3 +51,21 @@ def Towers(n, fr, to, spare):
         Towers(n - 1, fr, spare, to)
         Towers(1, fr, to, spare)
         Towers(n - 1, spare, to, fr)
+
+
+def search(L, e):
+    def bSearch(L, e, low, high):
+        if high == low:
+            return L[low] == e
+        mid = low + int((high - low)/2)
+        if L[mid] == e:
+            return True
+        if L[mid] > e:
+            return bSearch(L, e, low, mid - 1)
+        else:
+            return bSearch(L, e, mid + 1, high)
+
+    if len(L) == 0:
+        return False
+    else:
+        return bSearch(L, e, 0, len(L) - 1)
