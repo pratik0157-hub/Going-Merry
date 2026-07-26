@@ -92,3 +92,22 @@ class fraction(object):
         return fraction(numerNew, denomNew)
     def convert(self):
         return self.getNumer() / self.getDenom()
+
+def dec_bin(num):
+    ans1 = ""
+    ans2 = ""
+    whole_num = int(num)
+    frac_num = num % 1
+    if whole_num == 0:
+        ans1 = "0"
+    else:
+        while whole_num>0:
+            digit = whole_num%2
+            ans1+= str(digit)
+            whole_num//=2
+        ans1 = ans1[::-1]
+        for i in range(0, 4):
+            dummy = frac_num*2
+            ans2 += str(int(dummy))
+            frac_num = dummy - int(dummy)
+        return ans1 + "." + ans2
