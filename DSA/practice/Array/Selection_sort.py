@@ -14,5 +14,3 @@ def Selection_sort(arr):
     return arr
 
 print(Selection_sort(foo))
-        
-
