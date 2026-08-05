@@ -3,16 +3,28 @@
 
 foo = [10, 4, 14, 7, 3, 9, 21]
 """this isn't the original one its a variant one """
-def Quick_sort_lomoto(arr, low, high):
-    size = len(arr)
-    key = arr(size - 1)
+def partition(arr, low, high):
+    key = arr[high]
     """i is the wall and j is the index"""
-    i = 0
-    for j in range(0,size-1):
+    i = low - 1
+    for j in range(low,high):
         if key > arr[j]:
-            dummy = arr[j]
-            arr[j] = arr[i]
-            arr[i] = dummy
             i += 1
-    arr[size - 1] = arr[i]
-    arr[i] = key
+            swap(arr, i, j)
+    swap(arr, i+1, high)
+    return i+1
+
+
+def swap(arr, i, j):
+    arr[i], arr[j] = arr[j], arr[i]
+
+def Quick_sort(arr, low, high):
+
+    if low < high:
+        pi = partition(arr, low ,high)
+
+        Quick_sort(arr, low, pi - 1)
+        Quick_sort(arr , pi +1 , high)
+print(foo)
+Quick_sort(foo, 0, 6)
+print(foo)
